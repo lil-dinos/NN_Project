@@ -1,4 +1,4 @@
-# VAE Audio Clustering - Quick Start
+# VAE Audio Clustering 
 
 ## Overview
 VAE-based audio clustering project for music genre analysis using mel-spectrogram features.
@@ -36,9 +36,3 @@ All outputs saved to `output/` folder:
 - **Visualizations**: t-SNE/PCA plots, heatmaps, comparisons
 - **Clustering results**: Saved in txt files
 - **Metrics**: JSON format with evaluation scores
-
-## Key Files
-- `main_comprehensive.py` - Complete 3-tier analysis (Easy/Medium/Hard)
-- `EDA.py` - Cluster size optimization
-- `config.py` - Configuration settings
-- `requirements.txt` - Python dependencies
