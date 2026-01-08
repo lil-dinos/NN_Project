@@ -1,0 +1,248 @@
+================================================================================
+CSE425 AUDIO CLUSTERING PROJECT - COMPREHENSIVE REPORT
+================================================================================
+Generated: 2026-01-07 15:37:36
+
+--------------------------------------------------------------------------------
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Total clips processed: 3213
+Feature dimension: 128
+Latent dimension: 32
+Number of clusters: 4
+Unique genres: 82
+Genre distribution:
+  - r&b/soul: 593
+  - metal: 299
+  - hip hop: 262
+  - pop rock: 247
+  - alternative indie: 198
+  - country: 187
+  - alternative rock: 161
+  - pop: 142
+  - synth-pop: 109
+  - soft rock: 84
+  - alternative: 62
+  - new wave: 50
+  - reggae: 41
+  - rock: 37
+  - funk: 36
+  - hard rock: 31
+  - pop rap: 28
+  - dance pop: 25
+  - r&b: 24
+  - country rock: 24
+  - contemporary r&b: 21
+  - trap: 19
+  - reggae-pop: 19
+  - country pop: 18
+  - folk: 18
+  - dance/electronic: 17
+  - dance-pop: 15
+  - folk rock: 15
+  - dance: 14
+  - uk rap: 13
+  - nu metal: 13
+  - alternative indie rock: 13
+  - punk rock: 11
+  - pop-funk: 11
+  - post-punk: 11
+  - regional mexican: 10
+  - soul folk: 10
+  - funk rock: 9
+  - blues rock: 9
+  - pop ballad: 9
+  - grunge rock: 9
+  - american soul/r&b: 9
+  - glam metal: 9
+  - alternate indie: 9
+  - power pop: 8
+  - dream pop: 8
+  - dance rock: 8
+  - soul: 8
+  - jazz: 8
+  - emo rock: 8
+  - nu meta: 8
+  - metal alternate indie: 8
+  - progressive rock: 8
+  - soca hip hop reggae: 8
+  - electropop: 8
+  - folk pop: 8
+  - uk r&b: 8
+  - rap rock: 7
+  - reggaeton: 7
+  - corrido tumbado: 7
+  - eurodance: 7
+  - gospel: 7
+  - lternative indie: 7
+  - alternative metal: 7
+  - dance electronic: 7
+  - jange pop: 7
+  - funk pop: 7
+  - snap: 7
+  - indie rock: 7
+  - spoken word: 6
+  - emo: 6
+  - bubblegum pop: 6
+  - pop-punk: 6
+  - electronic: 6
+  - rock pop: 6
+  - electronic pop: 6
+  - latin pop: 6
+  - punk: 6
+  - disco: 5
+  - r&b soul: 5
+  - r&b/pop: 5
+  - pop punk: 5
+
+================================================================================
+EASY TASK RESULTS
+================================================================================
+Methods: Basic VAE + KMeans, PCA + KMeans, Autoencoder + KMeans
+
+
+VAE + KMeans:
+  Silhouette Score:        0.1971
+  Calinski-Harabasz Index: 704.66
+  Davies-Bouldin Index:    1.5156
+  Adjusted Rand Index:     0.0208
+  Normalized Mutual Info:  0.1033
+
+PCA + K-Means:
+  Silhouette Score:        0.1949
+  Calinski-Harabasz Index: 1616.92
+  Davies-Bouldin Index:    1.5015
+  Adjusted Rand Index:     0.0268
+  Normalized Mutual Info:  0.0752
+
+Autoencoder + K-Means:
+  Silhouette Score:        0.1163
+  Calinski-Harabasz Index: 673.62
+  Davies-Bouldin Index:    2.2138
+  Adjusted Rand Index:     0.0309
+  Normalized Mutual Info:  0.0778
+
+Direct K-Means (no reduction):
+  Silhouette Score:        0.1825
+  Calinski-Harabasz Index: 1502.05
+  Davies-Bouldin Index:    1.5678
+  Adjusted Rand Index:     0.0269
+  Normalized Mutual Info:  0.0753
+
+================================================================================
+MEDIUM TASK RESULTS
+================================================================================
+Methods: Conv VAE, Lyrics TF-IDF, Multiple Clustering Algorithms
+
+
+ConvVAE + KMeans:
+  Silhouette Score:        0.3330
+  Davies-Bouldin Index:    0.8444
+  Adjusted Rand Index:     0.0660
+  Normalized Mutual Info:  0.2087
+
+Lyrics TF-IDF + KMeans:
+  Silhouette Score:        0.3284
+  Davies-Bouldin Index:    0.7508
+  Adjusted Rand Index:     0.0133
+  Normalized Mutual Info:  0.0782
+
+VAE + K-Means:
+  Silhouette Score:        0.1692
+  Davies-Bouldin Index:    1.6452
+  Adjusted Rand Index:     0.0266
+  Normalized Mutual Info:  0.1062
+
+VAE + Agglomerative (Ward):
+  Silhouette Score:        0.1379
+  Davies-Bouldin Index:    1.9274
+  Adjusted Rand Index:     0.0111
+  Normalized Mutual Info:  0.0838
+
+VAE + DBSCAN:
+  Silhouette Score:        0.2494
+  Davies-Bouldin Index:    2.2623
+  Adjusted Rand Index:     0.0015
+  Normalized Mutual Info:  0.0116
+
+VAE + Gaussian Mixture:
+  Silhouette Score:        0.1311
+  Davies-Bouldin Index:    1.9078
+  Adjusted Rand Index:     0.0252
+  Normalized Mutual Info:  0.0966
+
+VAE + Lyrics Combined:
+  Silhouette Score:        0.1139
+  Davies-Bouldin Index:    1.5873
+  Adjusted Rand Index:     0.0335
+  Normalized Mutual Info:  0.0945
+
+================================================================================
+HARD TASK RESULTS
+================================================================================
+Methods: Beta-VAE, Conditional VAE, Multi-modal Fusion
+
+
+Beta-VAE + KMeans:
+  Silhouette Score:        0.3657
+  Calinski-Harabasz Index: 2375.42
+  Davies-Bouldin Index:    0.9742
+  Adjusted Rand Index:     0.0232
+  Normalized Mutual Info:  0.0757
+  Cluster Purity:          0.2281
+
+CVAE + KMeans:
+  Silhouette Score:        0.2369
+  Calinski-Harabasz Index: 873.15
+  Davies-Bouldin Index:    1.3492
+  Adjusted Rand Index:     -0.0045
+  Normalized Mutual Info:  0.0343
+  Cluster Purity:          0.1846
+
+Multi-modal Fusion:
+  Silhouette Score:        0.0703
+  Calinski-Harabasz Index: 374.35
+  Davies-Bouldin Index:    2.6838
+  Adjusted Rand Index:     0.0160
+  Normalized Mutual Info:  0.0967
+  Cluster Purity:          0.2151
+
+================================================================================
+FINAL COMPARISON TABLE
+================================================================================
+
+Method                                     Silhouette        ARI        NMI     Purity
+----------------------------------------------------------------------------------
+Beta-VAE + KMeans                              0.3657     0.0232     0.0757     0.2281
+ConvVAE + KMeans                               0.3330     0.0660     0.2087     0.3800
+Lyrics TF-IDF + KMeans                         0.3284     0.0133     0.0782     0.1861
+VAE + DBSCAN                                   0.2494     0.0015     0.0116     0.1846
+CVAE + KMeans                                  0.2369    -0.0045     0.0343     0.1846
+VAE + KMeans                                   0.1971     0.0208     0.1033     0.2001
+PCA + K-Means                                  0.1949     0.0268     0.0752     0.2263
+Direct K-Means (no reduction)                  0.1825     0.0269     0.0753     0.2266
+VAE + K-Means                                  0.1692     0.0266     0.1062     0.2098
+VAE + Agglomerative (Ward)                     0.1379     0.0111     0.0838     0.1983
+VAE + Gaussian Mixture                         0.1311     0.0252     0.0966     0.2007
+Autoencoder + K-Means                          0.1163     0.0309     0.0778     0.2300
+VAE + Lyrics Combined                          0.1139     0.0335     0.0945     0.2157
+Multi-modal Fusion                             0.0703     0.0160     0.0967     0.2151
+
+----------------------------------------------------------------------------------
+BEST METHOD (by Silhouette): Beta-VAE + KMeans
+
+================================================================================
+GENERATED VISUALIZATIONS
+================================================================================
+1. easy_vae_tsne.png - t-SNE visualization of VAE latent space
+2. easy_vae_pca.png - PCA visualization of VAE latent space
+3. easy_cluster_dist.png - Cluster size distribution
+4. hard_beta_vae_tsne.png - Beta-VAE latent space visualization
+5. hard_cvae_tsne.png - CVAE latent space by genre
+6. hard_multimodal_tsne.png - Multi-modal fusion t-SNE
+7. hard_multimodal_heatmap.png - Genre-cluster distribution heatmap
+8. final_comparison.png - Bar chart comparing all methods
+
+================================================================================
+END OF REPORT
+================================================================================

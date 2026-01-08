@@ -1,0 +1,23 @@
+HARD TASK SUMMARY
+==================================================
+
+Objective: Advanced VAE architectures, multi-modal fusion
+
+Beta-VAE + KMeans:
+  Silhouette: 0.3657
+  ARI: 0.0232
+  NMI: 0.0757
+  Purity: 0.2281
+
+CVAE + KMeans:
+  Silhouette: 0.2369
+  ARI: -0.0045
+  NMI: 0.0343
+  Purity: 0.1846
+
+Multi-modal Fusion:
+  Silhouette: 0.0703
+  ARI: 0.0160
+  NMI: 0.0967
+  Purity: 0.2151
+

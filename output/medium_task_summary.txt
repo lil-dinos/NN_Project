@@ -1,0 +1,15 @@
+MEDIUM TASK SUMMARY
+==================================================
+
+Objective: Enhanced VAE, multiple clustering algorithms
+Include lyrics embeddings
+
+Clustering Algorithm Comparison:
+  ConvVAE + KMeans: Silhouette = 0.3330
+  VAE + K-Means: Silhouette = 0.1692
+  VAE + Agglomerative (Ward): Silhouette = 0.1379
+  VAE + DBSCAN: Silhouette = 0.2494
+  VAE + Gaussian Mixture: Silhouette = 0.1311
+  VAE + Lyrics Combined: Silhouette = 0.1139
+  Beta-VAE + KMeans: Silhouette = 0.3657
+  CVAE + KMeans: Silhouette = 0.2369
